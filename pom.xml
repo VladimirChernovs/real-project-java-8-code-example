@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.rccl.capi</groupId>
+    <artifactId>capi-fit-cruise-booking</artifactId>
+    <name>capi-fit-cruise-booking</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>Booking List</description>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>capi-fit-cruise-booking-adapter</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <jaxb2-maven-plugin.version>2.2</jaxb2-maven-plugin.version>
+        <org.jvnet.jaxb2.maven2.version>0.14.0</org.jvnet.jaxb2.maven2.version>
+        <jaxb-xjc.version>2.2.10</jaxb-xjc.version>
+        <jaxb-api.version>2.2.12</jaxb-api.version>
+        <jackson.version>2.9.8</jackson.version>
+        <lombok.version>1.16.18</lombok.version>
+        <org.apache.commons.version>4.4</org.apache.commons.version>
+        <junit.jupiter.version>5.4.2</junit.jupiter.version>
+        <junit.jupiter.params.version>5.4.2</junit.jupiter.params.version>
+        <org.mockito.version>2.28.2</org.mockito.version>
+        <commons.lang3.version>3.8.1</commons.lang3.version>
+        <jaxb2.maven.plugin.version>1.6</jaxb2.maven.plugin.version>
+        <com.sun.xml.bind.version>2.2.4-1</com.sun.xml.bind.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.9.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons.lang3.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${org.mockito.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>${org.mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>

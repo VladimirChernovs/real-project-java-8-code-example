@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:s2="http://www.opentravel.org/OTA/2003/05/alpha" xmlns:s12="http://services.rccl.com/Interfaces/BookingList" xmlns:tns="http://services.rccl.com/Interfaces/BookingList" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="BookingList" targetNamespace="http://services.rccl.com/Interfaces/BookingList">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://services.rccl.com/Interfaces/BookingList" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import schemaLocation="OTA_ReadRQ.xsd" namespace="http://www.opentravel.org/OTA/2003/05/alpha"/>
+			<xsd:import schemaLocation="OTA_ResRetrieveRS.xsd" namespace="http://www.opentravel.org/OTA/2003/05/alpha"/>
+			<xsd:import namespace="http://www.opentravel.org/OTA/2003/05/alpha"/>
+			<xsd:element name="getBookingList">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="s2:OTA_ReadRQ"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="getBookingListResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="s2:OTA_ResRetrieveRS"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getBookingList_Reservation_FITWeb_sca_BookingListIn">
+		<wsdl:part name="parameters" element="s12:getBookingList"/>
+	</wsdl:message>
+	<wsdl:message name="getBookingList_Reservation_FITWeb_sca_BookingListOut">
+		<wsdl:part name="parameters" element="s12:getBookingListResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="Cruise_FIT_External_Reservation_FITWeb_sca_BookingList">
+		<wsdl:operation name="getBookingList">
+			<wsdl:input message="s12:getBookingList_Reservation_FITWeb_sca_BookingListIn"/>
+			<wsdl:output message="s12:getBookingList_Reservation_FITWeb_sca_BookingListOut"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="Cruise_FIT_External_Reservation_FITWeb_sca_BookingList" type="tns:Cruise_FIT_External_Reservation_FITWeb_sca_BookingList">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getBookingList">
+			<soap:operation soapAction="" style="document"/>
+			<wsdl:input>
+				<soap:body parts="parameters" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="parameters" use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="Cruise_FIT_External">
+		<wsdl:port name="Cruise_FIT_External_Reservation_FITWeb_sca_BookingList" binding="tns:Cruise_FIT_External_Reservation_FITWeb_sca_BookingList">
+			<soap:address location="https://stage.services.rccl.com/Reservation_FITWeb/sca/BookingList"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by RCL (Royal Caribbean Cruises Ltd.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://services.rccl.com/rsvr/api/simpletypes/v1.0"
+           targetNamespace="http://services.rccl.com/rsvr/api/simpletypes/v1.0" elementFormDefault="unqualified"
+           attributeFormDefault="unqualified" version="1.0">
+    <xs:simpleType name="StringLength0to128">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 0 to
+                128
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="128"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength0to255">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 0 to
+                255
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="255"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength0to32">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 0 to
+                32
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="32"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength0to64">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 0 to
+                64
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="64"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength0to8">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 0 to
+                8
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="8"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength1to128">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 1 to
+                128
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="128"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength1to16">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 1 to
+                16
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="16"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength1to255">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 1 to
+                255
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="255"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength1to32">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 1 to
+                32
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="32"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength3">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Strings, length exactly 3</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength1to64">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 1 to
+                64
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="64"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StringLength1to8">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Character Strings, length 1 to
+                8
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="8"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ListOfStringLength1to8">
+        <xs:annotation>
+            <xs:documentation>List of StringLength1to8.</xs:documentation>
+        </xs:annotation>
+        <xs:list itemType="StringLength1to8"/>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaLength1">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for an Alpha String, length 1</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaLength1to2">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for an Alpha String, length 1 to
+                2
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]{1,2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaLength3">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Alphabetic Strings, length exactly
+                3
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaLength4">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for an Alpha String, length 4</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaNumericStringLength1">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Alpha-Numeric Strings, length
+                1
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-zA-Z]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaNumericStringLength1to8">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Alpha-Numeric Strings, length 1 to
+                8
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-zA-Z]{1,8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaNumericStringLength1to20">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Alpha-Numeric Strings, length 1 to
+                8
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-zA-Z]{1,20}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaNumericStringLength1to3">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Alpha-Numeric Strings, length 1 to
+                8
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-zA-Z]{1,3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaNumericStringLength1to14">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used forAlpha-Numeric Strings, length 1 to
+                14
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-zA-Z]{1,14}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaNumericStringLength1to19">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used forAlpha-Numeric Strings, length 1 to
+                19
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-zA-Z]{1,19}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaNumericStringLength1to50">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used forAlpha-Numeric Strings, length 1 to
+                19
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9a-zA-Z]{1,50}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AlphaNumericStringLength1to26">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Alpha-Numeric Strings, length 1 to 26</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="26"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="UpperCaseAlphaNumericLength2to3">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for an Upper Alpha String and Numeric, length 2 to
+                3.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z0-9]{2,3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="UpperCaseAlphaNumericLength3to5">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for an Upper Alpha String and Numeric, length 3 to
+                5.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z0-9]{3,5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric0to4">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 0 to 4
+                inclusive
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric0to7">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 0 to 7
+                inclusive
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="7"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric0to99">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 0 to 99
+                inclusive
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric0to999">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 0 to 999
+                inclusive
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric0to9999">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 0 to 9999
+                inclusive.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric1to3">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 1 to 3
+                inclusive
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric1to2">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 1 to 2
+                inclusive
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric1to4">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 1 to 4
+                inclusive
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric1to99">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 1 to 99
+                inclusive
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric1to999">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 1 to 999
+                inclusive.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Numeric1to9999">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric values, from 1 to 9999
+                inclusive.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NumericStringLength1to16">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric Strings, length 1 to
+                16.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1,16}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NumericStringLength1to19">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric Strings, length 1 to
+                19.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1,19}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NumericStringLength4">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric Strings, length 4.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NumericStringLength1to3">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric Strings, minimum length 1, maximum
+                length 3.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1,3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NumericStringLength1to5">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric Strings, length 1 to
+                5
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1,5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NumericStringLength1to8">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Numeric Strings, length 1 to
+                8.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1,8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ISO3166">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">2 character country code as defined in
+                ISO3166.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="RPH_Type">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">(Reference Place Holder) - an index code to identify an instance in a
+                collection of like items.. For example, used to assign individual passengers or clients to particular
+                itinerary items.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1,9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="LookupCodeType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for codes in the lookup code
+                tables
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9A-Z]{1,3}(\.[A-Z]{3}(\.X){0,1}){0,1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ListOfOTA_CodeType">
+        <xs:list itemType="LookupCodeType"/>
+    </xs:simpleType>
+    <xs:simpleType name="DateOrTimeOrDateTimeType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">A construct to validate either a date or a time or a
+                dateTime value.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:union memberTypes="xs:date xs:dateTime xs:time"/>
+    </xs:simpleType>
+    <xs:simpleType name="DateTimeStringType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Date (Optional Time) Representation format:
+
+                yyyy-MM-ddThh:MM:ss, year (2010 to 2099)
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern
+                    value="([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})T([0-2]{1})([0-9]{1}):([0-5]{1})([0-9]{1}):([0-5]{1})([0-9]{1})"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="DateStringType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used for Date (Optional Time) Representation format:
+                yyyy-MM-ddThh:MM:ss, year (2010 to 2099)
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MMYYDate">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Month and year information.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(0[1-9]|1[0-2])[0-9][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="YesNoType">
+        <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Yes"/>
+            <xs:enumeration value="No"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Money">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Percentage">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.01"/>
+            <xs:maxInclusive value="100.00"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="CategoryLocationType">
+        <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Inside"/>
+            <xs:enumeration value="Outside"/>
+            <xs:enumeration value="Balcony"/>
+            <xs:enumeration value="Deluxe"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TransactionActionType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">To specify the type of action requested when more than one function could be
+                handled by the message.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Book"/>
+            <xs:enumeration value="Quote"/>
+            <xs:enumeration value="Hold"/>
+            <xs:enumeration value="Initiate"/>
+            <xs:enumeration value="Ignore"/>
+            <xs:enumeration value="Modify"/>
+            <xs:enumeration value="Commit"/>
+            <xs:enumeration value="Cancel"/>
+            <xs:enumeration value="RetrievePrice"/>
+            <xs:enumeration value="CommitOverrideEdits">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                        Commit the transaction and override the end transaction edits.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Validate"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attributeGroup name="PositionGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Used to specify the geographic coordinates of a
+                location.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="Latitude" type="StringLength1to16">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">The measure of the angular distance on a meridian
+                    north or south of the equator.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Longitude" type="StringLength1to16">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">The measure of the angular distance on a meridian
+                    east or west of the prime meridian.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Altitude" type="StringLength1to16">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">The height of an item, typically above sea
+                    level.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="AltitudeUnitOfMeasureCode" type="LookupCodeType">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Provides the unit of measure for the altitude (e.g.,
+                    feet, meters, miles, kilometers). Refer to OTA Code List Unit of Measure Code
+                    (UOM).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CompanyID_AttributesGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Provides meaning to a company code.</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="CompanyShortName" type="StringLength1to64">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Used to provide the company common
+                    name.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="TravelSector" type="LookupCodeType">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Refer to OTA Code List Travel Sector (TVS).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Code" type="StringLength1to16">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Identifies a company by the company
+                    code.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="CodeContext" type="StringLength1to32">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Identifies the context of the identifying code, such
+                    as DUNS, IATA or internal code, etc.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CompanyProfile_AttributesGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Provides meaning to a company code.</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="CompanyType" type="StringLength1to16" use="optional">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Used to provide the company common
+                    name.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="RoleType" type="StringLength1to16" use="optional">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Refer to OTA Code List Travel Sector (TVS).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="HeadQuarterID" type="StringLength1to32" use="optional">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Identifies a company by the company
+                    code.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="HeadQuarterFlag" type="YesNoType" use="optional"/>
+        <xs:attribute name="BranchIncludedFlag" type="YesNoType" use="optional"/>
+        <xs:attribute name="InternationalRepresentativeFlag" type="YesNoType" use="optional"/>
+        <xs:attribute name="AffiliationFlag" type="YesNoType" use="optional">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Identifies the context of the identifying code, such
+                    as DUNS, IATA or internal code, etc.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="GroupAffiliationFlag" type="YesNoType" use="optional"/>
+        <xs:attribute name="Status" type="LookupCodeType" use="optional"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="BookingChannelGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Specifies the booking channel types and whether it is
+                the primary means of connectivity of the source.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="Type" type="LookupCodeType" use="required">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">The type of booking channel (e.g. Global
+                    Distribution System (GDS), Alternative Distribution System (ADS), Sales and
+                    Catering System (SCS), Property Management System (PMS), Central Reservation
+                    System (CRS), Tour Operator System (TOS), Internet and ALL). Refer to OTA Code
+                    List Booking Channel Type (BCT).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Primary" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Indicates whether the enumerated booking channel is
+                    the primary means of connectivity used by the source.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="UniqueID_Group">
+        <xs:attribute name="URL" type="xs:anyURI"/>
+        <xs:attribute name="Type" type="LookupCodeType" use="required"/>
+        <xs:attribute name="Instance" type="StringLength1to32"/>
+        <xs:attribute name="ID" type="StringLength1to32" use="required"/>
+        <xs:attribute name="ID_Context" type="StringLength1to32"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="RCL_PayloadStdAttributes">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">The OTA_PayloadStdAttributes defines the standard
+                attributes that appear on the root element for all OTA payloads.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="EchoToken" type="StringLength1to128">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">A reference for additional message identification,
+                    assigned by the requesting host system. When a request message includes an echo
+                    token the corresponding response message MUST include an echo token with an
+                    identical value.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="MessageUUID" type="StringLength1to128">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">A reference for additional message identification,
+                    assigned by the WESB to correlate the messages related to particular
+                    transaction.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="TimeStamp" type="xs:dateTime">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Indicates the creation date and time of the message
+                    in UTC using the following format specified by ISO 8601; YYYY-MM-DDThh:mm:ssZ
+                    with time values using the 24 hour clock (e.g. 20 November 2003, 1:59:38 pm UTC
+                    becomes 2003-11-20T13:59:38Z).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Target" default="Production">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Used to indicate whether the request is for the Test
+                    or Production system.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="Test"/>
+                    <xs:enumeration value="Production"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="Version" type="xs:decimal">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">For all OTA versioned messages, the version of the
+                    message is indicated by a decimal value.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="TransactionIdentifier" type="StringLength1to32">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">A unique identifier to relate all messages within a
+                    transaction (e.g. this would be sent in all request and response messages that
+                    are part of an on-going transaction).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="SequenceNmbr" type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Used to identify the sequence number of the
+                    transaction as assigned by the sending system; allows for an application to
+                    process messages in a certain order or to request a resynchronization of
+                    messages in the event that a system has been off-line and needs to retrieve
+                    messages that were missed.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="TransactionStatusCode">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">This indicates where this message falls within a
+                    sequence of messages.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="Start">
+                        <xs:annotation>
+                            <xs:documentation xml:lang="en">This is the first message within a
+                                transaction.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:enumeration>
+                    <xs:enumeration value="End">
+                        <xs:annotation>
+                            <xs:documentation xml:lang="en">This is the last message within a
+                                transaction.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:enumeration>
+                    <xs:enumeration value="Rollback">
+                        <xs:annotation>
+                            <xs:documentation xml:lang="en">This indicates that all messages within
+                                the current transaction must be ignored.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:enumeration>
+                    <xs:enumeration value="InSeries">
+                        <xs:annotation>
+                            <xs:documentation xml:lang="en">This is any message that is not the
+                                first or last message within a transaction.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:enumeration>
+                    <xs:enumeration value="Continuation">
+                        <xs:annotation>
+                            <xs:documentation xml:lang="en">Specifies that this is a followup
+                                request asking for more of what was requested in the previous
+                                request.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:enumeration>
+                    <xs:enumeration value="Subsequent">
+                        <xs:annotation>
+                            <xs:documentation xml:lang="en">This request message is a subsequent
+                                request based on the previous message sent in this transaction.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:enumeration>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="TransactionActionCode" type="TransactionActionType"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="PrimaryLangID_Group">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Identifes the primary language preference for the
+                message.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="PrimaryLangID" type="xs:language">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Identifes the primary language preference for the
+                    message. The human language is identified by ISO 639 codes.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="AltLangID_Group">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Identifies the alternate language for a customer or
+                message. The human language is identified by ISO 639 codes.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="AltLangID" type="xs:language"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="LocationGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Code and optional string to describe a location
+                point.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="LocationCode" type="StringLength1to16">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Code used to identify a location.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="CodeContext" type="StringLength1to32" default="IATA">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Identifies the context of the identifying code
+                    (e.g., IATA, ARC, or internal code).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CruisePackageGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Specifies package type.</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="CruisePackageCode" type="StringLength1to16"/>
+        <xs:attribute name="InclusiveIndicator" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">When true, specifies the package is included in the
+                    cruise arrangement.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attributeGroup ref="DateTimeSpanGroup"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="DateTimeSpanGroup">
+        <xs:attribute name="Start" type="DateTimeStringType"/>
+        <xs:attribute name="Duration" type="xs:duration"/>
+        <xs:attribute name="End" type="DateTimeStringType"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="DateSpanGroup">
+        <xs:attribute name="Start" type="DateStringType" use="optional"/>
+        <xs:attribute name="Duration" type="xs:duration" use="optional"/>
+        <xs:attribute name="End" type="DateStringType" use="optional"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="ShipReferenceGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Specifies a vendor and ship.</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="VendorCode" type="StringLength1to8">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Specifies the operator of the ship (e.g. cruise line
+                    or ferry company).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="VendorName" type="StringLength1to64">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Specifies the name of the operator of the ship (e.g.
+                    a cruise line or ferry company).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ShipCode" type="StringLength1to16">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Specifies the ship code as defined by the cruise
+                    line.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ShipName" type="StringLength1to64">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Specifies the ship name as specified by the cruise
+                    line.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="VendorCodeContext" type="StringLength1to32">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Identifies the source authority for the code (e.g.,
+                    IATA); typically used with VendorCode.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="RegionGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Contains the region information for the
+                sailing
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="RegionCode" type="StringLength1to8" use="required">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Specifies a region code as commonly defined by the
+                    cruise line industry.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="RegionName" type="StringLength1to32">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Specifies the region name as commonly defined by the
+                    cruise line industry.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="SubRegionCode" type="StringLength1to8">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">A sub-region code for the specified
+                    region.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="SubRegionName" type="StringLength1to32">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">A sub-region name for the specified
+                    region.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CurrencyCodeGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Provides a currency code to reflect the currency in
+                which an amount may be expressed.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="CurrencyCode" type="AlphaLength3">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">The code specifying a monetary unit. Use ISO 4217,
+                    three alpha code.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="DecimalPlaces" type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Indicates the number of decimal places for a
+                    particular currency. This is equivalent to the ISO 4217 standard "minor unit".
+                    Typically used when the amount provided includes the minor unit of currency
+                    without a decimal point (e.g., USD 8500 needs DecimalPlaces="2" to represent
+                    $85).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="BirthDateGroup">
+        <xs:attribute name="BirthDate" type="DateStringType"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="TelephoneAttributesGroup">
+        <xs:annotation>
+            <xs:documentation source="Description" xml:lang="en">Provides telephone information
+                details.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="PhoneTechType" type="StringLength0to32">
+            <xs:annotation>
+                <xs:documentation source="Description" xml:lang="en">Indicates type of technology
+                    associated with this telephone number, such as Voice, Data, Fax, Pager, Mobile,
+                    TTY, etc. Refer to OpenTravel Code List Phone Technology Type
+                    (PTT).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="PhoneUseType" type="StringLength0to128">
+            <xs:annotation>
+                <xs:documentation source="Description" xml:lang="en">Describes the type of telephone
+                    number, in the context of its general use (e.g. Home, Business, Emergency
+                    Contact, Travel Arranger, Day, Evening). Refer to OpenTravel Code List Phone Use
+                    Type (PUT).
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="CountryAccessCode" type="NumericStringLength1to3"/>
+        <xs:attribute name="AreaCityCode" type="NumericStringLength1to8"/>
+        <xs:attribute name="PhoneNumber" type="StringLength1to64" use="required"/>
+        <xs:attribute name="Remark" type="StringLength1to128"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="GuestInfoGroup">
+        <xs:attribute name="GuestRefNumber" type="xs:string"/>
+        <xs:attribute name="Age" type="Numeric0to999"/>
+        <xs:attribute name="AgeCode" type="StringLength1to16"/>
+        <xs:attribute name="Nationality" type="ISO3166"/>
+        <xs:attribute name="BirthDate" type="xs:date"/>
+        <xs:attribute name="Gender">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="male"/>
+                    <xs:enumeration value="female"/>
+                    <xs:enumeration value="unknown"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="LoyaltyID" type="StringLength1to64"/>
+        <xs:attribute name="LoyalLevel" type="StringLength1to32"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="EffectiveExpireDateGroup">
+        <xs:attribute name="EffectiveDate" type="DateStringType"/>
+        <xs:attribute name="ExpireDate" type="DateStringType"/>
+        <xs:attribute name="ExpireDateExclusiveInd" type="xs:boolean"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="GrpAuditGroup">
+        <xs:attribute name="LockDateTime" type="DateTimeStringType"/>
+        <xs:attribute name="LockExpiryDateTime" type="DateTimeStringType"/>
+        <xs:attribute name="LastModifyDateTime" type="DateTimeStringType"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="PolicyTypeGroup">
+        <xs:annotation>
+            <xs:documentation>Specifies the restrictions in terms of inventory for Group Policies</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="PolicyType" type="StringLength0to32">
+            <xs:annotation>
+                <xs:documentation>Identifies the group payment policy type</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="MinimumCabinsRequired" type="Numeric0to999">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Minimum number of Cabins required in this in this category to create a
+                    group
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="MaximumCabinsAllowed" type="Numeric0to9999">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Maximum number of Cabins allowed in this category for the group
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ThresholdCabinsAllowed" type="Numeric0to999"/>
+        <xs:attribute name="TripleQuadCabinsAllowed" type="Numeric0to999"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CruiseGrpTourConductorCreditsGroup">
+        <xs:attribute name="MaxTourConductorCredits" type="Numeric0to999"/>
+        <xs:attribute name="EarnedTourConductorCredits" type="Numeric0to999"/>
+        <xs:attribute name="TCRatioRequiredCredits" type="Numeric0to999"/>
+        <xs:attribute name="TCRatioRewardCredits" type="Numeric0to999"/>
+        <xs:attribute name="TCEligibleFlag" type="YesNoType"/>
+        <xs:attribute name="TCRestrictedFlag" type="YesNoType"/>
+        <xs:attribute name="TCAgencyBasis" type="StringLength0to32"/>
+        <xs:attribute name="TCRemnantApplicableFlag" type="YesNoType"/>
+        <xs:attribute name="TourConductorType" type="StringLength1to16"/>
+        <xs:attribute name="BookingsRequiredForNextTC" type="Numeric0to999"/>
+        <xs:attribute name="TCEntityType" type="StringLength1to16"/>
+        <xs:attribute name="TCEntityCode" type="StringLength1to16"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="FareGroup">
+        <xs:attribute name="FareCode" type="StringLength1to16"/>
+        <xs:attribute name="GroupCode" type="StringLength1to16"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="TPA_PromotionPriceGroup">
+        <xs:attribute name="PromotionDescription" type="StringLength1to16"/>
+        <xs:attribute name="PriceId" type="StringLength1to16">
+            <xs:annotation>
+                <xs:documentation>Identifies the Sale Pricing Id.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="PriceIdDescription" type="StringLength1to16"/>
+        <xs:attribute name="PromotionClass" type="StringLength0to64"/>
+        <xs:attribute name="PromotionTypes" type="StringLength0to32"/>
+        <xs:attribute name="DiscountTypes" type="StringLength0to32"/>
+        <xs:attribute name="PromotionAmount" type="Money"/>
+        <xs:attribute name="NCCFAmount" type="Money"/>
+        <xs:attribute name="NetAmount" type="Money"/>
+        <xs:attribute name="AvailablePromotionsQuantity" type="Numeric1to999"/>
+        <xs:attribute name="AppliedPromotionsQuantity" type="Numeric1to99"/>
+        <xs:attribute name="AppliedValueAddPromotionsQuantity" type="Numeric1to99"/>
+        <xs:attribute name="ValueAddAmount" type="Money"/>
+        <xs:attribute name="FaceCurrency" type="StringLength3"/>
+        <xs:attribute name="FaceValueType" type="StringLength0to32"/>
+        <xs:attribute name="PromoPercentage" type="Percentage"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CruiseCategoryGroup">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Contains the berth and price category
+                codes.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="BerthedCategoryCode" type="StringLength1to8"/>
+        <xs:attribute name="PricedCategoryCode" type="StringLength1to8"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="DeckGroup">
+        <xs:attribute name="DeckNumber" type="StringLength1to8"/>
+        <xs:attribute name="DeckName" type="StringLength1to32"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CruiseCategoryDetailGroup">
+        <xs:attributeGroup ref="CruiseCategoryGroup"/>
+        <xs:attributeGroup ref="DeckGroup"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="UnitsOfMeasureGroup">
+        <xs:attribute name="UnitOfMeasureQuantity" type="xs:decimal"/>
+        <xs:attribute name="UnitOfMeasure" type="StringLength1to16"/>
+        <xs:attribute name="UnitOfMeasureCode" type="LookupCodeType"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="OptionalCodeOptionalNameGroup">
+        <xs:attribute name="Code" type="StringLength1to8"/>
+        <xs:attribute name="Name" type="StringLength1to64"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="LanguageGroup">
+        <xs:attribute name="Language" type="xs:language"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CruiseCabinGroup">
+        <xs:attribute name="CabinNumber" type="StringLength1to8" use="optional"/>
+        <xs:attribute name="MaxOccupancy" type="Numeric1to99"/>
+        <xs:attribute name="DeclineIndicator" type="xs:boolean"/>
+        <xs:attribute name="HeldIndicator" type="xs:boolean"/>
+        <xs:attribute name="SequenceNumber" type="Numeric1to999"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="PromotionCodeGroup">
+        <xs:attribute name="PromotionCode" type="StringLength1to32"/>
+        <xs:attribute name="PromotionVendorCode" type="ListOfStringLength1to8"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="ErrorWarningAttributeGroup">
+        <xs:attribute name="ShortText" type="StringLength1to64"/>
+        <xs:attribute name="Code" type="LookupCodeType"/>
+        <xs:attribute name="DocURL" type="xs:anyURI"/>
+        <xs:attribute name="Status" type="StringLength1to64"/>
+        <xs:attribute name="Tag" type="xs:string"/>
+        <xs:attribute name="RecordID" type="StringLength1to64"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="DateTimeStampGroup">
+        <xs:attribute name="CreateDateTime" type="xs:dateTime"/>
+        <xs:attribute name="CreatorID" type="StringLength1to32"/>
+        <xs:attribute name="LastModifyDateTime" type="xs:dateTime"/>
+        <xs:attribute name="LastModifierID" type="StringLength1to32"/>
+        <xs:attribute name="PurgeDate" type="xs:date"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="PayloadStdAttributes">
+        <xs:attribute name="EchoToken" type="StringLength1to128"/>
+        <xs:attribute name="TimeStamp" type="xs:dateTime"/>
+        <xs:attribute name="Target" default="Production">
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="Test"/>
+                    <xs:enumeration value="Production"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="Version" type="xs:decimal" use="required"/>
+        <xs:attribute name="TransactionIdentifier" type="StringLength1to32"/>
+        <xs:attribute name="SequenceNmbr" type="xs:nonNegativeInteger"/>
+        <xs:attribute name="TransactionStatusCode">
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="Start"/>
+                    <xs:enumeration value="End"/>
+                    <xs:enumeration value="Rollback"/>
+                    <xs:enumeration value="InSeries"/>
+                    <xs:enumeration value="Continuation"/>
+                    <xs:enumeration value="Subsequent"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attributeGroup ref="PrimaryLangID_Group"/>
+        <xs:attributeGroup ref="AltLangID_Group"/>
+        <xs:attribute name="RetransmissionIndicator" type="xs:boolean"/>
+        <xs:attribute name="TransactionActionCode" type="TransactionActionType" use="optional"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="MaxResponsesGroup">
+        <xs:attribute name="MaxResponses" type="xs:positiveInteger"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="ResponseGroup">
+        <xs:attribute name="MoreIndicator" type="xs:boolean"/>
+        <xs:attribute name="MoreDataEchoToken" type="StringLength1to128"/>
+        <xs:attributeGroup ref="MaxResponsesGroup"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="PaymentInstallmentScheduleAttributeGroup">
+        <xs:attribute name="PlanType" type="LookupCodeType"/>
+        <xs:attribute name="PlanName" type="StringLength0to64"/>
+        <xs:attribute name="PlanDescription" type="StringLength0to64"/>
+        <xs:attribute name="PaymentAmount" type="Money"/>
+        <xs:attribute name="ProcessedAmount" type="Money"/>
+        <xs:attribute name="PendingAmount" type="Money"/>
+        <xs:attribute name="PaymentCount" type="Numeric0to99"/>
+        <xs:attribute name="ProcessedCount" type="Numeric0to99"/>
+        <xs:attribute name="PendingCount" type="Numeric0to99"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="PaymentCardAttributeGroup">
+        <xs:attribute name="PaymentLinkNumber" type="StringLength0to32"/>
+        <xs:attribute name="PaymentSourceNumber" type="StringLength0to32"/>
+        <xs:attribute name="Remarks" type="StringLength0to128"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="PaymentInstallmentScheduleDetailAttributeGroup">
+        <xs:attribute name="PaymentNumber" type="StringLength0to32"/>
+        <xs:attribute name="Status" type="LookupCodeType"/>
+        <xs:attribute name="TransactionReferenceNumber" type="StringLength0to32"/>
+        <xs:attribute name="AuthorizationCode" type="StringLength0to32"/>
+        <xs:attribute name="PaymentStatus" type="LookupCodeType"/>
+        <xs:attribute name="ScheduledDate" type="DateStringType"/>
+        <xs:attribute name="AuthorizationDate" type="DateStringType"/>
+        <xs:attribute name="SettlementDate" type="DateStringType"/>
+        <xs:attribute name="PaymentAmount" type="Money"/>
+    </xs:attributeGroup>
+</xs:schema>

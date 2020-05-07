@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by Jimmy Vitakis (Royal Caribbean Cruises Ltd.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://services.rccl.com/COSIMessage"
+		   targetNamespace="http://services.rccl.com/COSIMessage" elementFormDefault="qualified"
+		   attributeFormDefault="unqualified">
+	<xs:element name="messages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="type" type="xs:string"/>
+				<xs:element name="code" type="xs:string"/>
+				<xs:element name="severity" type="xs:string"/>
+				<xs:element name="sourceID" type="xs:string"/>
+				<xs:element name="sourceDescription" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

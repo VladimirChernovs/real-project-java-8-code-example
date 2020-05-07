@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>capi-fit-cruise-booking</artifactId>
+        <groupId>com.rccl.capi</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>capi-fit-cruise-booking-adapter</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+
+        <finalName>${project.artifactId}-${project.version}</finalName>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>${org.jvnet.jaxb2.maven2.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>javax.xml.bind</groupId>
+                        <artifactId>jaxb-api</artifactId>
+                        <version>${jaxb-api.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>jaxb-xjc</artifactId>
+                        <version>${jaxb-xjc.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <schemaDirectory>${project.basedir}/src/main/resources/schemas</schemaDirectory>
+                            <schemaIncludes>
+                                <include>**/*.xsd</include>
+                            </schemaIncludes>
+                            <strict>false</strict>
+                            <verbose>true</verbose>
+                            <extension>true</extension>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>generate-wsdl</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <schemaDirectory>${project.basedir}/src/main/resources/schemas</schemaDirectory>
+                            <schemaIncludes>
+                                <include>ota-wsdls-schemas/*.wsdl</include>
+                            </schemaIncludes>
+                            <schemaLanguage>WSDL</schemaLanguage>
+                            <cleanPackageDirectories>false</cleanPackageDirectories>
+                            <catalog>${project.basedir}/src/main/resources/catalog.xml</catalog>
+                            <strict>false</strict>
+                            <verbose>true</verbose>
+                            <extension>true</extension>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

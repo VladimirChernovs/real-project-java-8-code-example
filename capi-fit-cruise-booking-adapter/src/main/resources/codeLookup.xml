@@ -1,0 +1,88 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<lookupList>
+
+	<lookup id="Boolean">
+		<!-- Y=true=1 , N=false=0-->
+		<mapList>
+			<map otaCode="true" rapiCode="Y"/>
+			<map otaCode="false" rapiCode="N"/>
+			<map otaCode="false" rapiCode=""/>
+		</mapList>
+	</lookup>
+
+	<lookup id="YesNoType">
+		<mapList>
+			<map otaCode="Yes" rapiCode="Y"/>
+			<map otaCode="No" rapiCode="N"/>
+			<map otaCode="No" rapiCode=""/>
+		</mapList>
+	</lookup>
+
+	<lookup id="UIT">
+		<mapList>
+
+			<map otaCode="12" rapiCode="Cruise line"/>
+			<map otaCode="13" rapiCode="Internet broker"/>
+			<map otaCode="14" rapiCode="Reservation"/>
+			<map otaCode="15" rapiCode="Cancellation"/>
+			<map otaCode="16" rapiCode="Reference"/>
+			<map otaCode="17" rapiCode="Meeting planning agency"/>
+			<map otaCode="18" rapiCode="Other"/>
+
+		</mapList>
+	</lookup>
+
+	<lookup id="STS_ReservationStatus">
+		<mapList>
+			<map otaCode="42" rapiCode="OF"/>
+			<map otaCode="49" rapiCode="BK"/>
+			<map otaCode="35" rapiCode="AC"/>
+			<map otaCode="16" rapiCode="CX"/>
+			<map otaCode="46" rapiCode="WL"/>
+		</mapList>
+	</lookup>
+
+	<lookup id="Brand_RQ3A">
+		<!-- This lookup will be used for backward compatibility of requests that accept 1Char Brand. Client Can Send 3Char or 1 Char-->
+		<mapList>
+			<map otaCode="RCC" rapiCode="RCC"/>
+			<map otaCode="CEL" rapiCode="CEL"/>
+			<map otaCode="ISL" rapiCode="ISL"/>
+			<map otaCode="PUL" rapiCode="PUL"/>
+			<map otaCode="AZA" rapiCode="AZA"/>
+			<map otaCode="CDF" rapiCode="CDF"/>
+			<map otaCode="R" rapiCode="RCC"/>
+			<map otaCode="C" rapiCode="CEL"/>
+			<map otaCode="I" rapiCode="ISL"/>
+			<map otaCode="P" rapiCode="PUL"/>
+			<map otaCode="Z" rapiCode="AZA"/>
+			<map otaCode="F" rapiCode="CDF"/>
+		</mapList>
+	</lookup>
+
+	<lookup id="RES_TYP">
+		<mapList>
+			<map otaCode="9" rapiCode="G"/>
+			<map otaCode="14" rapiCode="I"/>
+			<map otaCode="18" rapiCode="B"/>
+		</mapList>
+	</lookup>
+
+	<lookup id="FOLDER_TYPE">
+		<mapList>
+			<map otaCode="H" rapiCode="HOLD"/>
+			<map otaCode="C" rapiCode="COMP"/>
+			<map otaCode="A" rapiCode="ALL"/>
+		</mapList>
+	</lookup>
+
+	<lookup id="BOOKING_TYPE">
+		<mapList>
+			<map otaCode="36" rapiCode="ACT"/>
+			<map otaCode="16" rapiCode="CXL"/>
+			<map otaCode="99" rapiCode="ALL"/>
+		</mapList>
+	</lookup>
+
+</lookupList>

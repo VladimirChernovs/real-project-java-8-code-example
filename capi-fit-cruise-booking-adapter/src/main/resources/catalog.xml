@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+	<!--COSI common schemas-->
+
+	<public publicId="http://services.rccl.com/COSIHeader"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/cosi/COSIHeader.xsd"/>
+
+	<public publicId="http://services.rccl.com/COSIMessage"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/cosi/COSIMessage.xsd"/>
+
+	<!--FIT common schemas-->
+
+	<public publicId="http://www.opentravel.org/OTA/2003/05/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-fit/OTA_CruiseCommonTypes.xsd"/>
+
+	<public publicId="http://www.opentravel.org/OTA/2003/05/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-fit/OTA_AirCommonTypes.xsd"/>
+
+	<public publicId="http://www.opentravel.org/OTA/2003/05/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-fit/OTA_AirPreferences.xsd"/>
+
+	<public publicId="http://www.opentravel.org/OTA/2003/05/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-fit/OTA_CommonPrefs.xsd"/>
+
+	<public publicId="http://www.opentravel.org/OTA/2003/05/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-fit/OTA_CommonTypes.xsd"/>
+
+	<public publicId="http://www.opentravel.org/OTA/2003/05/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-fit/OTA_SimpleTypes.xsd"/>
+
+	<public publicId="http://www.opentravel.org/OTA/2003/05/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-fit/OTA_CommonTypes.xsd"/>
+
+	<!--Group common schemas-->
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_AirCommonTypes.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_AirPreferences.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_CommonPrefs.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_CommonTypes.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_CruiseCommonTypes.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_CruiseGrpCommonTypes.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_HotelCommonTypes.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_HotelPreferences.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_PkgCommonTypes.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_Profile.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_SimpleTypes.xsd"/>
+
+	<public publicId="http://www.rccl.com/Group/2007/01/alpha"
+			uri="maven:com.rccl.capi:capi-common-artifacts!/schemas/ota-group/RCL_VehicleCommonTypes.xsd"/>
+
+</catalog>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified"
+		   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="lookupList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lookup" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lookup">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="mapList"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:NCName" use="required"/>
+			<xs:attribute name="otaListEnabled" type="xs:boolean"/>
+			<xs:attribute name="rapiListEnabled" type="xs:boolean"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="mapList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="map" minOccurs="0"
+							maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="map">
+		<xs:complexType>
+			<xs:attribute name="longDesc" type="xs:anySimpleType"/>
+			<xs:attribute name="otaCode" type="xs:anySimpleType"
+						  use="required"/>
+			<xs:attribute name="rapiCode" type="xs:anySimpleType"
+						  use="required"/>
+			<xs:attribute name="shortDesc" type="xs:anySimpleType"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
