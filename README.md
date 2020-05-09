@@ -1,2 +1,2 @@
-# capi-fit-cruise-booking
+# Java 8 code example (from real project)
 
