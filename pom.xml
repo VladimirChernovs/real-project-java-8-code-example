@@ -30,7 +30,7 @@
         <junit.jupiter.version>5.4.2</junit.jupiter.version>
         <junit.jupiter.params.version>5.4.2</junit.jupiter.params.version>
         <org.mockito.version>2.28.2</org.mockito.version>
-        <commons.lang3.version>3.8.1</commons.lang3.version>
+        <commons.lang3.version>3.18.0</commons.lang3.version>
         <jaxb2.maven.plugin.version>1.6</jaxb2.maven.plugin.version>
         <com.sun.xml.bind.version>2.2.4-1</com.sun.xml.bind.version>
     </properties>
